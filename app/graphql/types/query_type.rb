@@ -4,11 +4,7 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
-
-    # TODO: remove me
-    field :blog, BlogType, null: false,
+    field :blog,BlogType,null: false
     def blog
       context[:blog]
     end
